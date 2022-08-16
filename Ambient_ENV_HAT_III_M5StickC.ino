@@ -4,6 +4,7 @@
 
    by Shoji Iwasaki
    Sep 15, 2021
+   Aug 16, 2022 create publish version
 
 */
 
@@ -19,14 +20,14 @@ QMP6988 qmp6988;  // QMP6988 object
 
 char draw_string[1024];  // buffer for Temperature, Humidity, Barometric Pressure
 
-const char* ssid = "AG20R-9C41F8";
-const char* password = "j2nrc5xnkc";
+const char* ssid = "write SSID string";
+const char* password = "write Access Key code";
 
 WiFiClient client;
 Ambient ambient;  // Ambientオブジェクトを作る
 
-unsigned int channelId = 41449; // AmbientのチャネルID
-const char* writeKey = "0522b33a0ff129fe"; // ライトキー
+unsigned int channelId = 12345; // AmbientのチャネルID
+const char* writeKey = "foobar"; // ライトキー
 
 void setup(void) {
   M5.begin();
